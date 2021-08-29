@@ -1,7 +1,9 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import { CategoryContext } from '../../App';
 
-const Shipment = (props) => {
-    const {count} = props;
+const Shipment = () => {
+    const count = useContext(CategoryContext);
+
 
     return (
         <div>
