@@ -2,12 +2,13 @@ import React,{useContext} from 'react';
 import { CategoryContext } from '../../App';
 
 const Shipment = () => {
-    const count = useContext(CategoryContext);
+    const [category,setcategory] = useContext(CategoryContext);
 
 
     return (
         <div>
-            <h1>This is Shipment: {count}</h1>
+            <h1>This is Shipment: {category}</h1>
+            <button onClick={()=>setcategory(category+1)}>Increment from Category</button>
         </div>
     );
 };
