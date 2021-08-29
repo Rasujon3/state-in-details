@@ -7,7 +7,7 @@ import React, { createContext, useState } from 'react';
 export const CategoryContext = createContext();
 
 function App() {
-  const [category, setCategory] = useState(0);
+  const [category, setCategory] = useState('laptop');
 
   return (
     <CategoryContext.Provider value={[category,setCategory]}>
